@@ -1,9 +1,12 @@
-function App() {
+import { Routes, Route } from 'react-router-dom'
+import Home from './pages/Home'
+import ProjectDetail from './pages/ProjectDetail'
+
+export default function App() {
   return (
-    <div className="min-h-screen bg-white text-gray-900">
-      <h1 className="text-4xl font-bold p-8">Portfolio</h1>
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/projects/:slug" element={<ProjectDetail />} />
+    </Routes>
   )
 }
-
-export default App
