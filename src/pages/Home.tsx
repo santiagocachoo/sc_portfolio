@@ -14,12 +14,12 @@ export default function Home() {
         {/* About */}
         <section id="about" className="py-20 border-b border-gray-100 dark:border-gray-800">
           <SectionLabel>About</SectionLabel>
-          <h1 className="text-4xl font-bold mt-4 mb-2">Santiago Cachoh</h1>
+          <h1 className="text-4xl font-bold mt-4 mb-2">Santiago Cacho</h1>
           <p className="text-gray-500 dark:text-gray-400 mb-6 text-sm">
-            Software Engineer · Builder · Explorer
+            Software Engineer · Runner · Explorer
           </p>
           <p className="text-gray-600 dark:text-gray-300 leading-relaxed max-w-xl mb-8">
-            Short bio — a couple of sentences about who you are, what you build, and what you care about.
+            I am a 21 year old from Mexico who loves to learn and create.
           </p>
           <div className="flex flex-wrap gap-3">
             <a
@@ -29,7 +29,7 @@ export default function Home() {
               View Projects ↓
             </a>
             <a
-              href="https://github.com/santiagocachoh"
+              href="https://github.com/santiagocachoo"
               target="_blank"
               rel="noopener noreferrer"
               className="border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-400 text-sm px-4 py-2 rounded-md hover:border-gray-400 dark:hover:border-gray-500 transition-colors"
