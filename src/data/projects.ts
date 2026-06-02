@@ -29,6 +29,7 @@ export const projects: Project[] = [
       'Configured static deployment through GitHub Pages',
     ],
     tech: ['React', 'TypeScript', 'Vite', 'Tailwind CSS', 'React Router', 'Lucide React', 'Github Pages'],
+    image: '/images/croak_logo.png',
     links: {
       github: 'https://github.com/santiagocachoo/croak_webpage',
       live: 'https://santiagocachoo.github.io/croak_webpage/'
@@ -64,6 +65,7 @@ export const projects: Project[] = [
       'PostgreSQL',
       'JWT'
     ],
+    image: '/images/clas.jpeg',
     links: {
       github: 'https://github.com/turtlevlz/CLAS'
     },
