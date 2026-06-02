@@ -16,10 +16,10 @@ export default function Home() {
           <SectionLabel>About</SectionLabel>
           <h1 className="text-4xl font-bold mt-4 mb-2">Santiago Cacho</h1>
           <p className="text-gray-500 dark:text-gray-400 mb-6 text-sm">
-            Software Engineer · Runner · Explorer
+            Full stack developer and creator
           </p>
           <p className="text-gray-600 dark:text-gray-300 leading-relaxed max-w-xl mb-8">
-            I am a 21 year old from Mexico who loves to learn and create.
+            I am a 21 year old software engineer from Mexico focused on building and creating clean code and interactive digital experiences and applications. Outside of work, I love anything related to music (plying, listening, producing) and running.
           </p>
           <div className="flex flex-wrap gap-3">
             <a
@@ -81,7 +81,7 @@ export default function Home() {
               GitHub ↗
             </a>
             <a
-              href="https://linkedin.com/in/santiagocachoh"
+              href="https://www.linkedin.com/in/santiagocacho/"
               target="_blank"
               rel="noopener noreferrer"
               className="border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-400 text-sm px-4 py-2 rounded-md hover:border-gray-400 dark:hover:border-gray-500 transition-colors"
