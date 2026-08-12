@@ -3,8 +3,8 @@ import { getProjectBySlug, getAdjacentProjects } from './projectUtils'
 
 describe('getProjectBySlug', () => {
   it('returns the project with the matching slug', () => {
-    const project = getProjectBySlug('example-project')
-    expect(project?.title).toBe('Example Project')
+    const project = getProjectBySlug('croak')
+    expect(project?.title).toBe('Croak')
   })
 
   it('returns undefined for an unknown slug', () => {
@@ -14,14 +14,14 @@ describe('getProjectBySlug', () => {
 
 describe('getAdjacentProjects', () => {
   it('returns no prev and has a next for the first project', () => {
-    const { prev, next } = getAdjacentProjects('example-project')
+    const { prev, next } = getAdjacentProjects('croak')
     expect(prev).toBeUndefined()
-    expect(next?.slug).toBe('second-project')
+    expect(next?.slug).toBe('clas-platform')
   })
 
   it('returns a prev and no next for the last project', () => {
-    const { prev, next } = getAdjacentProjects('second-project')
-    expect(prev?.slug).toBe('example-project')
+    const { prev, next } = getAdjacentProjects('clas-platform')
+    expect(prev?.slug).toBe('croak')
     expect(next).toBeUndefined()
   })
 
