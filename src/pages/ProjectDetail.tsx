@@ -83,6 +83,11 @@ export default function ProjectDetail() {
               </a>
             )}
           </div>
+          {project.demoNote && (
+            <p className="text-xs text-gray-400 dark:text-gray-500 mt-4 leading-relaxed">
+              {project.demoNote}
+            </p>
+          )}
         </div>
 
         <div className="py-8">

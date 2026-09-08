@@ -79,6 +79,8 @@ type Project = {
     github?: string
     live?: string
   }
+  demoNote?: string    // Optional caveat shown under the links on the detail page
+                       // (e.g. free-tier cold start, demo credentials)
 }
 ```
 

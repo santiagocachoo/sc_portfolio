@@ -10,6 +10,7 @@ export type Project = {
     github?: string
     live?: string
   }
+  demoNote?: string
 }
 
 export const projects: Project[] = [
@@ -38,36 +39,35 @@ export const projects: Project[] = [
   {
     slug: 'clas-platform',
     title: 'CLAS Platform',
-    tagline: 'A full-stack web platform for the Automotive Cluster of Sonora',
+    tagline: 'Full-stack company directory and membership platform for an automotive industry cluster',
     description: [
-      'CLAS is a team-built web platform created for the Automotive Cluster of Sonora to centralize member companies, industry information, and administrative workflows.',
-      'I contributed mainly to the frontend, with a focus on the public company directory, company detail pages, role-aware views, and the visual direction of the directory experience.',
-      'I also helped shape the design system and UI style for the directory page, making the member browsing experience feel more polished, organized, and consistent.',
-      'Through the project, I worked closely with the backend API structure and learned how the frontend connects with Express routes, PostgreSQL data models, authentication, and protected business workflows.'
+      'CLAS was built as a team project for a real automotive industry cluster in Sonora, Mexico. Two student teams each developed a full competing proposal for the client; the client selected the other team\'s proposal, and neither was ultimately put into production.',
+      'The platform is a full-stack company directory and membership system: a public directory with search, filtering, sorting, and pagination, JWT authentication across three roles (cluster admin, company admin, company user), and admin tools for managing companies, contacts, and products. I worked primarily on the frontend, focused on the public directory, role-aware views, and the design system behind the browsing experience.',
+      'After the course ended, I sanitized the project on my own and deployed it as a public demo: replaced all real client data (company names, tax IDs, contacts, and trademarked logos) with fictional equivalents, moved hardcoded configuration to environment variables, added SSL support for the hosted Postgres database, and shipped it to Vercel, Render, and Neon.',
     ],
     highlights: [
-      'Built key frontend views for the company directory and company detail experience',
-      'Helped define the design system, visual direction, and UI style of the directory page',
-      'Implemented search, filtering, sorting, pagination, and reusable UI components for browsing member companies',
-      'Worked on role-based frontend flows for public users, company users, company admins, and cluster admins',
-      'Integrated frontend pages with REST API endpoints for companies, catalogs, memberships, contacts, and related business data',
-      'Collaborated in a team of 8 developers, contributing primarily to React, TypeScript, routing, state handling, and UI behavior'
+      'Public company directory with search, filtering, sorting, and pagination',
+      'JWT authentication with three role levels: cluster admin, company admin, company user',
+      'Company, contact, and product management with an admin panel',
+      'Independently sanitized real client data and redeployed the project as a public-safe demo (fictional data, environment variables, SSL)',
     ],
     tech: [
       'React',
       'TypeScript',
       'Vite',
-      'TailwindCSS',
-      'React Router',
-      'Axios',
-      'Node.js',
+      'Tailwind CSS',
       'Express',
+      'Sequelize',
       'PostgreSQL',
-      'JWT'
+      'JWT',
+      'Render',
+      'Vercel'
     ],
     image: '/images/clas.jpeg',
     links: {
-      github: 'https://github.com/turtlevlz/CLAS'
+      github: 'https://github.com/santiagocachoo/CLAS/tree/public-demo',
+      live: 'https://company-directory-demo.vercel.app'
     },
+    demoNote: "The backend runs on Render's free tier, so the first request after a period of inactivity can take up to a minute. Demo credentials for both company roles are pre-filled on the login page.",
   }
 ]
